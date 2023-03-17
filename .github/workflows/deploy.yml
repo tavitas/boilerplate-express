@@ -24,7 +24,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
-          server: ${{ secrets.SERVER }}
+          REMOTE_HOST: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           remote_path: "/var/www/my-app"
           local_path: "dist/"
